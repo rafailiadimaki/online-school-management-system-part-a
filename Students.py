@@ -149,10 +149,14 @@ class Students:
                         date_of_birth = date_of_birth.strftime('%m/%d/%Y')
                         pass
                     fees=input("Tuition fees: ")
-                    if fees=='' or not (fees.isdigit()):
+                    if fees=='':
                         random_fees=['1010','1600','1800','850','1543','2123','1780','2100', '1503', '1450']
                         random.shuffle(random_fees)
                         fees=random.choice(random_fees)
+                    while not (fees.isdigit()):
+                        fees=input("Please type your numbers in digits:\nTuition fees: ")
+                    else:
+                        pass
                     print()
                     print('Thank you! The form has been submitted successfully.')
                     print('----------------------------------------------------')
@@ -194,10 +198,14 @@ class Students:
                     date_of_birth = date_of_birth.strftime('%m/%d/%Y')
                     pass
                 fees=input("Tuition fees: ")
-                if fees=='' or not (fees.isdigit()):
+                if fees=='':
                     random_fees=['1010','1600','1800','850','1543','2123','1780','2100', '1503', '1450']
                     random.shuffle(random_fees)
                     fees=random.choice(random_fees)
+                while not (fees.isdigit()):
+                    fees=input("Please type your numbers in digits:\nTuition fees: ")
+                else:
+                    pass
                 print()
                 print('Thank you! The form has been submitted successfully.')
                 print('----------------------------------------------------')
@@ -246,10 +254,14 @@ class Students:
                         date_of_birth = date_of_birth.strftime('%m/%d/%Y')
                         pass
                     fees=input("Tuition fees: ")
-                    if fees=='' or not (fees.isdigit()):
+                    if fees=='':
                         random_fees=['1010','1600','1800','850','1543','2123','1780','2100', '1503', '1450']
                         random.shuffle(random_fees)
                         fees=random.choice(random_fees)
+                    while not (fees.isdigit()):
+                        fees=input("Please type your numbers in digits:\nTuition fees: ")
+                    else:
+                        pass
                     course= unidecode.unidecode(input("Our school provides the following courses:Python, C#, Javascript and Java.\nCourse:")).upper() 
                     while course != 'C#' and course != 'JAVASCRIPT' and course != 'JAVA' and course != 'PYTHON' and course != '':
                         course = unidecode.unidecode(input("Our school provides only the following courses:\nPython, C#, Javascript and Java. Course: ")).upper()
@@ -324,10 +336,14 @@ class Students:
                     date_of_birth = date_of_birth.strftime('%m/%d/%Y')
                     pass
                 fees=input("Tuition fees: ")
-                if fees=='' or not (fees.isdigit()):
+                if fees=='':
                     random_fees=['1010','1600','1800','850','1543','2123','1780','2100', '1503', '1450']
                     random.shuffle(random_fees)
                     fees=random.choice(random_fees)
+                while not (fees.isdigit()):
+                    fees=input("Please type your numbers in digits:\nTuition fees: ")
+                else:
+                    pass
                 course= unidecode.unidecode(input("Our school provides the following courses:Python, C#, Javascript and Java.\nCourse:")).upper() 
                 while course != 'C#' and course != 'JAVASCRIPT' and course != 'JAVA' and course != 'PYTHON' and course != '':
                     course = unidecode.unidecode(input("Our school provides only the following courses:\nPython, C#, Javascript and Java. Course: ")).upper()
